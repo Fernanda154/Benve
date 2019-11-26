@@ -1,0 +1,110 @@
+create database Benve;
+use Benve;
+create table Cliente(
+	idCliente int auto_increment not null,
+	nome varchar(100),
+	email varchar(45),
+	telefone varchar(15),
+	primary key(idCliente)
+);
+create table Revendedor(
+	idRevendedor int auto_increment not null,
+	nome varchar(100),
+	email varchar(45),
+	telefone varchar(15), 
+	senha varchar(50),
+	primary key(idRevendedor)
+);
+create table Endereco(
+	idEndereco int auto_increment not null,
+	idCliente int not null,
+	rua varchar(150),
+	bairro varchar(100),
+	cidade varchar(100),
+	numeroCasa int,
+	primary key(idEndereco),
+	foreign key(idCliente) references Cliente(idCliente)
+
+);
+create table Produto(
+	idProduto int auto_increment not null,
+	descricao varchar(100),
+	preco double,
+	estoque int,
+	dataValidade date,
+	dataFabricacao date,
+	primary key(idProduto)
+);
+create table Venda(
+	idVenda int auto_increment not null,
+	idProduto int,
+	idCliente int,
+	idRevendedor int, 
+	pagou boolean,
+	dataVenda date,
+	foreign key(idCliente) references cliente(idCliente),
+	foreign key(idProduto) references produto(idProduto),
+	foreign key(idRevendedor) references revendedor(idRevendedor),
+	primary key(idVenda)
+);
+create table Venda_has_Produto(
+	idProduto int not null,
+	idVenda int not null,
+	foreign key (idProduto) references Produto(idProduto),
+	foreign key (idVenda) references Venda(idVenda)
+);
+create database Benve;
+use Benve;
+create table Cliente(
+	idCliente int auto_increment not null,
+	nome varchar(100),
+	email varchar(45),
+	telefone varchar(15),
+	primary key(idCliente)
+);
+create table Revendedor(
+	idRevendedor int auto_increment not null,
+	nome varchar(100),
+	email varchar(45),
+	telefone varchar(15), 
+	senha varchar(50),
+	primary key(idRevendedor)
+);
+create table Endereco(
+	idEndereco int auto_increment not null,
+	idCliente int not null,
+	rua varchar(150),
+	bairro varchar(100),
+	cidade varchar(100),
+	numeroCasa int,
+	primary key(idEndereco),
+	foreign key(idCliente) references Cliente(idCliente)
+
+);
+create table Produto(
+	idProduto int auto_increment not null,
+	descricao varchar(100),
+	preco double,
+	estoque int,
+	dataValidade date,
+	dataFabricacao date,
+	primary key(idProduto)
+);
+create table Venda(
+	idVenda int auto_increment not null,
+	idProduto int,
+	idCliente int,
+	idRevendedor int, 
+	pagou boolean,
+	dataVenda date,
+	foreign key(idCliente) references cliente(idCliente),
+	foreign key(idProduto) references produto(idProduto),
+	foreign key(idRevendedor) references revendedor(idRevendedor),
+	primary key(idVenda)
+);
+create table Venda_has_Produto(
+	idProduto int not null,
+	idVenda int not null,
+	foreign key (idProduto) references Produto(idProduto),
+	foreign key (idVenda) references Venda(idVenda)
+);

@@ -1,0 +1,95 @@
+*{
+	margin: 0px;
+}
+
+/* CABEÇARIO*/
+h1{
+	font-size: 1.3em;
+	color: #FFF;
+	display: inline-flex;
+}
+nav{
+	height: 10vh;
+	width: 100vw;
+	background-color: lightsalmon;
+}
+.iconUser{
+	margin-right: 1vw;
+	padding-bottom: 0.5vh;
+	height: 5vh;
+	width: auto;
+	display: inline-flex;
+}
+.boxUser h1{
+	margin-bottom: 2vh;
+	display: inline-flex;
+}
+.boxUser{
+	float: right;
+	margin-top: 3vh;
+	margin-right: 5vw;
+	display: inline-flex;
+}
+select{
+	margin-bottom: 20px;
+}
+.logo{
+	font-size: 1.5em;
+	margin-left: 3vw;
+	margin-top: 3vh;
+}
+/* GRID INTERNO */
+body{
+	background-color: #FFF;
+}
+.conteudo{
+	display: grid;
+	grid-template-columns: 27vw 27vw 27vw;
+	grid-template-rows: 34vh 34vh;
+	grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    text-align: left;
+    margin-left: 8vw;
+    margin-top: 6vh;
+    color: #FFF;
+}
+.conteudo div{
+	text-align: center;
+	border-radius: 5px;
+	background-color:  gray!important;
+}
+.maisVendido{
+	background-color: #FFF;
+	grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 2;
+	grid-column-end: 2;
+
+}
+.produtos{
+	background-color: #FFF;
+	grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+	grid-column-end: 1;
+
+}
+.clientes{
+	background-color: #FFF;
+	grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+	grid-column-end: 1;
+
+}
+.pedencias{
+	background-color: #FFF;
+	grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 3;
+	grid-column-end: 3;
+
+}
+.metas{
+	background-color: #FFF;
+}

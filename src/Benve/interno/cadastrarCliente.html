@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Benve - Novo cliente</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/cadastrarUsuario.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="container">
+		<div class="ilustraIndex">
+			<img src="imgs/ilustraindex.png">
+		</div>
+		<div class="portaLogin">
+			<div class="boxLogin">
+				<h1>Novo Cliente</h1>
+				<form action="../php/cadastroCliente.php" method="POST">
+					<label for="usuario">Nome:</label>
+					<input type="text" name="user" id="usuario" class="textUser">
+					<label for="telefone">Telefone:</label>
+					<input type="text" name="telefone" id="telefone">
+					<label for="email">Email</label>
+					<input type="text" name="email" id="email">
+					<input type="submit" name="enviar" id="enviar" value="Casdastrar-se">
+					<a href="painel.php">Voltar</a>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

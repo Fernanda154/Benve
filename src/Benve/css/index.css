@@ -1,0 +1,63 @@
+*{
+	margin: 0px;
+}
+.container{
+	display: flex;
+	height: 100vh;
+	width: 100vw;	
+}
+.portaLogin{
+	display: inline-block;
+	background: #000;
+	width: 50vw;
+	height: 100vh;
+}
+.ilustraIndex{
+	display: inline-block;
+	background: pink;
+	width: 50vw;
+	height: 100vh;
+}
+.boxLogin input{
+	border: none;
+	display: block;
+	border-bottom: 1px solid #FFF;
+	background-color: #000;
+	height: 7vh;
+	width: 20vw;
+	margin-left: 10%;
+	color: #FFF;
+}
+#enviar{
+	border: none;
+	background-color: pink;
+	height: 5vh;
+	margin-bottom: 10px;
+	margin-top: 10px; 
+	color: #000;
+}
+.boxLogin{
+	border: 1px solid #fff;
+	width: 25vw;
+	margin-left: 13vw;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+	text-align: center;
+	margin-top: 25vh;
+	color: #FFF;
+}
+.boxLogin h1{
+	color: #fff;
+}
+.boxLogin a{
+	display: inline-block;
+	text-decoration: none;
+	color: #FFF;
+	margin-right: 8px;
+}
+.soPraFastar{
+	margin-left: 6px;
+}
+.boxLogin a:hover{
+	color: pink;
+}

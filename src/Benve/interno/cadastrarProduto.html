@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Benve - Novo cliente</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/cadastrarUsuario.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="container">
+		<div class="ilustraIndex">
+			<img src="imgs/ilustraindex.png">
+		</div>
+		<div class="portaLogin">
+			<div class="boxLogin">
+				<h1>Novo Cliente</h1>
+				<form action="../php/cadastrarProduto.php" method="POST" >
+					<label for='descr'>Descrição: </label>
+					<input type="text" id="descr" name="descricao">
+					<label for="preco">Preço: </label>
+					<input type="number" id="preco" name="preco"  step="0.01">
+					<label for="esto">Estoque: </label>
+					<input type="number" id="esto" name="estoque">
+					<label for="vali">Validade: </label>
+					<input type="date" placeholder="DD/MM/AAAA" name="validade">
+					<label for="fabri">Data de fabricação: </label>
+					<input type="date" id="fabri" placeholder="DD/MM/AAAA" name="fabricacao">
+					<input type="submit" name="Cadastrar">
+				</form>
+				<a href="painel.php">Voltar</a>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
